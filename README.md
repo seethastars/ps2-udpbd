@@ -38,3 +38,16 @@ Example: `/mnt/ps2/Grand Thef Auto III.iso`.
 
 9. I use a direct connection between my PC and the PS2, set a manual IPv4 address and subnet mask:
 ![ip-settings](.assets/ip-settings.png)
+
+10. Go to the PS2 and open LaunchELF from the browser or open it holding *R1* during FreeMCBoot/PS2BBL startup screen.
+Then select MISC/ --> PS2Net, let the PS2 idle.
+
+11. Into xeb_neutrino/UDPBD Sync App run the following command: `dotnet UDPBD-for-XEB+-CLI.dll -path /mnt/ps2 -ps2ip 192.168.0.10 -bin2iso`.
+
+12. Unmount the exFAT partition then into the `udpbd-server` folder start the udpbd-server.
+```
+sudo umount /mnt/ps2
+sudo ./udpbd-server /dev/nvme0n1p3
+```
+
+The server needs to be open for the entire play session, launche XEB+ and play!
