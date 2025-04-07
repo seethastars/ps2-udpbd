@@ -24,10 +24,12 @@ This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
     ```
 4. Open up paritionmanager and create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
 
-5. Create a new mount point and mount the new partition in it:
+5. Create a new mount point and mount the new partition onto it:
 
     ```
     sudo mkdir /mnt/ps2/
+    ```
+    ```
     sudo mount /dev/nvme0n1p3 /mnt/ps2/ -o uid=$USER
     ```
 6. Create folders named `CD` and `DVD` in `/mnt/ps2/`.
