@@ -57,4 +57,5 @@ The server needs to be open for the entire play session, launch XEB+ and play!
 Special thanks to:
 
 @sync-on-luma for making the XEB+ Neutrino Launcher.
+
 @MegaBitmap for the UDPBD server.
