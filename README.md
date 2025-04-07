@@ -54,7 +54,7 @@ dotnet UDPBD-for-XEB+-CLI.dll -path /$HOME/games/ps2 -ps2ip 192.168.0.10 -bin2is
 12. Unmount the exFAT partition then into `udpbd-server` folder start the udpbd-server.
 ```
 sudo umount /$HOME/games/ps2
-sudo ./udpbd-server /dev/nvme0n1p3
+sudo ./udpbd-server.x86_64 /dev/nvme0n1p3
 ```
 
 The server needs to be open for the entire play session, launch XEB+ and play!
