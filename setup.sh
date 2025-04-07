@@ -12,7 +12,7 @@ BLUE='\e[34m'
 
 while :
 do
-  read -p "This is a script for installing and setup a PS2-UPDBD server, would you like to proceed? (y/n): " resp      # user response
+  read -p "This is a script for installing and setup a PS2-UPDBD server on Arch Linux, would you like to proceed? (y/n): " resp  # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then
       exit 1
@@ -21,7 +21,7 @@ do
 
       echo -e "${YELLOW}Installing dependencies...${RC}"
 
-      # Note: you can use 'gparted' instead of partitionmanager for making the exfat partition.
+      # Note: you can use 'gparted' instead of partitionmanager for making the exFAT partition.
       ps2_pkgs='dotnet-runtime-8.0 exfatprogs partitionmanager'
 
       paru -Syu $ps2_pkgs
@@ -32,6 +32,7 @@ do
       git clone https://gitlab.com/ps2max/udpbd-server.git
       cd updbd-server/
       make
+      cd ..
 
       echo -e "${GREEN}Done! Now follow the README.md guide.\n${RC}"
 
