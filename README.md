@@ -1,7 +1,9 @@
 <!-- Install Instructions -->
-## PS2-UDPBD Setup
+## PS2-UDPBD Arch Linux Setup
 
 This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
+
+> **Note:** the `setup.sh` script uses **paru** as the package manager, i recommend installing paru before proceeding with this guide.
 
 1. Clone the repository:
 
@@ -58,4 +60,4 @@ Special thanks to:
 
 [@sync-on-luma](https://github.com/sync-on-luma/xebplus-neutrino-loader-plugin) for making the XEB+ Neutrino Launcher.
 
-[@MegaBitmap](https://github.com/MegaBitmap/UDPBD-for-XEBP) for the UDPBD server.
+[@MegaBitmap](https://github.com/MegaBitmap/UDPBD-for-XEBP) for the UDPBD-XEB server.
