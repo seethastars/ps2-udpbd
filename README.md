@@ -27,7 +27,7 @@ This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
 5. Create a new mount point and mount the new partition onto it:
 
     ```
-    mkdir /$HOME/games/ps2/
+    mkdir $HOME/games/ps2/
     ```
     ```
     sudo mount /dev/nvme0n1p3 /$HOME/games/ps2 -o uid=$USER
@@ -36,7 +36,7 @@ This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
 
 7. Rip/copy the PS2 disc images into the folder that corresponds with their original source media. 
 
-- Example: `/$HOME/games/ps2/DVD/Grand Thef Auto III.iso`.
+- Example: `$HOME/games/ps2/DVD/Grand Thef Auto III.iso`.
 
 8. Download the [latest udpbd release](https://github.com/MegaBitmap/UDPBD-for-XEBP/releases) and extract the `UDPBD-for-XEB+ Sync App` folder.
 
@@ -48,12 +48,12 @@ Then select MISC/ --> PS2Net and let the PS2 idle.
 
 11. Into `xeb_neutrino/UDPBD Sync App` folder run the following command: 
 ```
-dotnet UDPBD-for-XEB+-CLI.dll -path /$HOME/games/ps2 -ps2ip 192.168.0.10 -bin2iso
+dotnet UDPBD-for-XEB+-CLI.dll -path $HOME/games/ps2 -ps2ip 192.168.0.10 -bin2iso
 ```
 
 12. Unmount the exFAT partition then into `udpbd-server` folder start the udpbd-server.
 ```
-sudo umount /$HOME/games/ps2
+sudo umount $HOME/games/ps2
 sudo ./udpbd-server.x86_64 /dev/nvme0n1p3
 ```
 
