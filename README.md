@@ -1,18 +1,18 @@
 <!-- Install Instructions -->
 ## PS2-UDPBD Setup
 
-This is my little setup script for setting up my PS2 with a UDPBD server for playing games.
+This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/seethastars/ps2-updbd.git
+    git clone https://github.com/seethastars/ps2-udpbd.git
     ```
 
 2. Change to the repository directory:
 
     ```sh
-    cd ps2-upbdb/
+    cd ps2-udpbd/
     ```
     
 3. Run the install script:
@@ -32,7 +32,7 @@ This is my little setup script for setting up my PS2 with a UDPBD server for pla
 
 7. Rip/copy the PS2 disc images into the folder that corresponds with their original source media. 
 
-Example: `/mnt/ps2/DVD/Grand Thef Auto III.iso`.
+- Example: `/mnt/ps2/DVD/Grand Thef Auto III.iso`.
 
 8. Download the [latest udpbd release](https://github.com/MegaBitmap/UDPBD-for-XEBP/releases) and extract the `UDPBD-for-XEB+ Sync App` folder.
 
@@ -51,3 +51,10 @@ sudo ./udpbd-server /dev/nvme0n1p3
 ```
 
 The server needs to be open for the entire play session, launch XEB+ and play!
+
+## Credits
+
+Special thanks to:
+
+@sync-on-luma for making the XEB+ Neutrino Launcher.
+@MegaBitmap for the UDPBD server.
