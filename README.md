@@ -34,4 +34,4 @@ This is my little setup script for setting up my PS2 with a UDPBD server for pla
 
 Example: `/mnt/ps2/Grand Thef Auto III.iso`.
 
-8. Download the ![https://github.com/MegaBitmap/UDPBD-for-XEBP/releases]latest upbdb release and extract the `UDPBD-for-XEB+ Sync App`.
+8. Download the [latest upbdb release](https://github.com/MegaBitmap/UDPBD-for-XEBP/releases) and extract the `UDPBD-for-XEB+ Sync App`.
