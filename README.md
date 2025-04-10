@@ -63,6 +63,14 @@ sudo ./udpbd-server.x86_64 /dev/nvme0n1p3
 
 The server needs to be open for the entire play session, launch XEB+ and play!
 
+For adding/removing games, stop the udpbd-server and repeat steps: 
+
+- 5: mounting paritition.
+- 6: rip/copy games.
+- 10
+- 11
+- 12
+
 ## Credits
 
 Special thanks to:
