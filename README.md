@@ -34,9 +34,9 @@ This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
     ```
     sudo mount /dev/nvme0n1p3 /mnt/ps2 -o uid=$USER
     ```
-6. Create folders named `CD` and `DVD` in `/$HOME/games/ps2/` and rip/copy the PS2 disc images into the folder that corresponds with their original source media. 
+6. Create folders named `CD` and `DVD` in `/mnt/ps2/` and rip/copy the PS2 disc images into the folder that corresponds with their original source media. 
 
-- Example: `$HOME/games/ps2/DVD/Grand Thef Auto III.iso`.
+- Example: `/mnt/ps2/DVD/Grand Thef Auto III.iso`.
 
 8. Download the [latest udpbd release](https://github.com/sync-on-luma/xebplus-neutrino-loader-plugin/releases/) and extract the `UDPBD-for-XEB+ Sync App` folder.
 
