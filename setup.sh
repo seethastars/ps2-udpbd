@@ -12,7 +12,7 @@ BLUE='\e[34m'
 
 while :
 do
-  read -p "This is a script for installing and setup a PS2-UPDBD server on Arch Linux, would you like to proceed? (y/n): " resp  # user response
+  read -p "This is a script for Installing PS2-UPDBD server on Arch Linux, would you like to proceed? (y/n): " resp  # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then
       exit 1
@@ -30,7 +30,7 @@ do
 
       echo -e "${YELLOW}Cloning the udpbd-server repo and compiling it...${RC}"
       git clone https://gitlab.com/ps2max/udpbd-server.git
-      cd updbd-server/
+      cd udpbd-server/
       make
       cd ..
 
