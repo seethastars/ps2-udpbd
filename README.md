@@ -22,7 +22,8 @@ This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
     ```sh
     ./setup.sh
     ```
-4. Open up paritionmanager and create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
+4. Once the script finishes, open up paritionmanager and create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
+
 ![partition](.assets/partition.png)
 
 5. Create a new mount point and mount the new partition onto it:
