@@ -11,7 +11,7 @@ This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
     git clone https://github.com/seethastars/ps2-udpbd.git
     ```
 
-2. Change to the repository directory:
+2. CD into the repo directory:
 
     ```sh
     cd ps2-udpbd/
