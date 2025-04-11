@@ -1,9 +1,9 @@
 <!-- Install Instructions -->
-## PS2-UDPBD Arch Linux Setup
+## PS2-UDPBD Setup
 
-This is my little guide for setting up my PS2 with a UDPBD server on Arch Linux.
+This is my little guide for setting up my PS2 with a UDPBD server.
 
-> **Note:** the `setup.sh` script uses **paru** as the package manager, i recommend installing paru before proceeding with this guide.
+> **Note:** I use Arch Linux so the `setup.sh` script uses **paru** as the package manager, you can change the package manager if you use any other distro.
 
 1. Clone the repository:
 
