@@ -22,7 +22,7 @@ This is my little guide for setting up my PS2 with a UDPBD server.
     ```sh
     ./setup.sh
     ```
-4. Once the script finishes, open up paritionmanager and create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
+4. Once the script finishes, open up gparted or paritionmanager and create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
 
 ![partition](.assets/partition.png)
 
