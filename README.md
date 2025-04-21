@@ -22,9 +22,12 @@ This is my little guide for setting up my PS2 with a UDPBD server.
     ```sh
     ./setup.sh
     ```
-4. Once the script finishes, open up gparted or paritionmanager and create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
 
-![partition](.assets/partition.png)
+4. Once the script finishes, create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
+
+    ```
+    sudo mkfs.exfat /dev/nvme0n1p3
+    ```
 
 5. Create a new mount point and mount the new partition onto it:
 
@@ -44,22 +47,22 @@ This is my little guide for setting up my PS2 with a UDPBD server.
 ![ip-settings](.assets/ip-settings.png)
 
 10. Go to the PS2 and open LaunchELF from the browser or open it holding *R1* during FreeMCBoot/PS2BBL startup screen.
-Then select MISC/ --> PS2Net and let the PS2 idle until an IP address appears on the top screen.
+Then select **MISC/ --> PS2Net** and let the PS2 idle until an IP address appears on the top screen.
 
 11. Then into `xeb_neutrino/UDPBD Sync App` directory run the following command:
 
-```
-dotnet UDPBD-for-XEB+-CLI.dll -path /mnt/ps2/ -ps2ip 192.168.0.10 -bin2iso
-```
+    ```
+    dotnet UDPBD-for-XEB+-CLI.dll -path /mnt/ps2/ -ps2ip 192.168.0.10 -bin2iso
+    ```
 
 12. Unmount the exFAT partition then go into `udpbd-server` directory and start the udpbd-server.
-```
-sudo umount /mnt/ps2
-```
-
-```
-sudo ./udpbd-server.x86_64 /dev/nvme0n1p3
-```
+    
+    ```
+    sudo umount /mnt/ps2
+    ```
+    ```
+    sudo ./udpbd-server.x86_64 /dev/nvme0n1p3
+    ```
 
 The server needs to be open for the entire play session, launch XEB+ and play!
 

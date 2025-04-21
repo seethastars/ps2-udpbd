@@ -21,18 +21,15 @@ do
 
       echo -e "${YELLOW}Installing dependencies...${RC}"
 
-      # Note: you can use 'gparted' instead of partitionmanager for making the exFAT partition.
-      paru -Syu 'dotnet-runtime-8 exfatprogs partitionmanager'
+      paru -Syu dotnet-runtime-8.0 exfatprogs
 
       echo -e "${GREEN}Dependencies installed.\n${RC}"
 
       echo -e "${YELLOW}Cloning the udpbd-server repo and compiling it...${RC}"
       git clone https://gitlab.com/ps2max/udpbd-server.git
-      cd udpbd-server/
-      make
-      cd ..
-
-      echo -e "${GREEN}Done! Now follow the guide on Github.\n${RC}"
+      mkdir ~/ps2/
+      mv udpbd-server/ ~/ps2/
+      cd ~/ps2/udpbd-server/ && make
 
       echo -e "${RED}Please type Y for confirm or N for decling (^C to quit.)${RC}"
     fi 
