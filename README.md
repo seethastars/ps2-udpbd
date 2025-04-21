@@ -46,6 +46,7 @@ This is my little guide for setting up my PS2 with a UDPBD server.
 8. Download the [latest udpbd release](https://github.com/sync-on-luma/xebplus-neutrino-loader-plugin/releases/) and extract the `UDPBD-for-XEB+ Sync App` folder.
 
 9. For a direct connection (PC to PS2), set a manual IPv4 address and subnet mask:
+
 ![ip-settings](.assets/ip-settings.png)
 
 10. Go to the PS2 and open LaunchELF from the browser or open it holding *R1* during FreeMCBoot/PS2BBL startup screen.
