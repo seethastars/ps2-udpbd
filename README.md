@@ -25,6 +25,8 @@ This is my little guide for setting up my PS2 with a UDPBD server.
 
 4. Once the script finishes, create a new exFAT partition, in my case i have an NVME SSD so it most likely will be: `/dev/nvme0n1p3.`
 
+> **Note:** Make sure you have a bit of free space with a filesystem on it for creating the partition.
+
     ```
     sudo mkfs.exfat /dev/nvme0n1p3
     ```
